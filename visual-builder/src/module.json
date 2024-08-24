@@ -1,0 +1,53 @@
+{
+    "name": "d5-tut/divi-simple-module",
+    "d4Shortcode": "d5_tut_divi_simple_module",
+    "title": "Divi Simple Module",
+    "titles": "Divi Simple Modules",
+    "category": "module",
+    "attributes": {
+      "module": {
+        "type": "object",
+        "selector": "{{selector}}",
+        "default": {
+          "meta": {
+            "adminLabel": {
+              "desktop": {
+                "value": "Divi Simple Module"
+              }
+            }
+          }
+        }
+      },
+      "image": {
+        "type": "object",
+        "selector": "{{selector}} .d5_tut_divi_simple_module_img img"
+      },
+      "title": {
+        "type": "object",
+        "selector": "{{selector}} .d5_tut_divi_simple_module_title",
+        "attributes": {
+          "class": "d5_tut_divi_simple_module_title"
+        },
+        "tagName": "h2",
+        "inlineEditor": "plainText",
+        "elementType": "heading",
+        "childrenSanitizer": "et_core_esc_previously"
+      },
+      "content": {
+        "type": "object",
+        "selector": "{{selector}} .d5_tut_divi_simple_module_content",
+        "attributes": {
+          "class": "d5_tut_divi_simple_module_content"
+        },
+        "tagName": "div",
+        "inlineEditor": "richText",
+        "childrenSanitizer": "et_core_esc_previously",
+        "allowHtml": true
+      },
+      "button": {
+        "type": "object",
+        "selector": "{{selector}} .d5_tut_divi_simple_module_btn",
+        "tagName": "button"
+      }
+    }
+  }
